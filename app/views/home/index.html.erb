@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earth is flat !</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="form">
+      <form id="form" action="#" method="get">
+        <fieldset>
+          <label for="latitude">Latitude:</label>
+          <input id="latitude" name="latitude" type="number" min="-90" max="90" placeholder="48.8167" autofocus required>
+        </fieldset>
+        <fieldset>
+          <label for="longitude">Longitude:</label>
+          <input id="longitude" name="longitude" type="number" min="-180" max="180" placeholder="2.3833" required>
+        </fieldset>
+        <fieldset id="message-fields">
+          <label for="longitude">Message:</label>
+          <input id="message" name="message" type="text" placeholder="My place" required>
+        </fieldset>
+        <div id="submit">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXwlR7SVnVPm0VRHa6YHacPigMDHLzFro&callback=initMap"
+    async defer></script>
+  </body>
+</html>
